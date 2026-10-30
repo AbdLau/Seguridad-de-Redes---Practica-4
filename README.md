@@ -121,7 +121,7 @@ Puntos principales:
 
 ![SW1 show aaa servers](imagenes/16_sw1_aaa_servers.png)
 
-![Login local admin en SW1](imagenes/23_sw1_login_admin.png)
+![Login local admin en SW1](imagenes/23_SW1_login_admin.png)
 
 Startup configuration de SW1 también disponible en [`configs/SW1_startup.txt`](configs/SW1_startup.txt).
 
