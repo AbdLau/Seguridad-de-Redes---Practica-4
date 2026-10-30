@@ -158,4 +158,6 @@ Nota: en nivel 0 algunos comandos como `show privilege` pueden ser rechazados; e
 - [`configs/R1_startup.txt`](configs/R1_startup.txt)
 - [`configs/SW1_running.txt`](configs/SW1_running.txt)
 - [`configs/SW1_startup.txt`](configs/SW1_startup.txt)
-- [`configs/aaa_servers_R1_SW1.txt`](configs/aaa_servers_R1_SW1.txt): salida de `show aaa servers`.
+- [`configs/SW1_aaa_servers.txt`](configs/SW1_aaa_servers.txt): salida de `show aaa servers`.
+- [`configs/R1_aaa_servers.txt`](configs/R1_aaa_servers.txt): salida de `show aaa servers`.
+- 
