@@ -1,0 +1,39 @@
+enable
+configure terminal
+hostname R1
+username admin privilege 15 secret CLAVE_ADMIN_LOCAL
+aaa new-model
+radius server NPS
+ address ipv4 10.8.46.2 auth-port 1812 acct-port 1813
+ key RadiusR1Lab2026
+aaa group server radius NPS_GRP
+ server name NPS
+aaa authentication login default group NPS_GRP local
+aaa authorization exec default group NPS_GRP local
+aaa accounting exec default start-stop group NPS_GRP
+aaa accounting network default start-stop group NPS_GRP
+ip domain-name lab.local
+crypto key generate rsa modulus 2048
+ip ssh version 2
+interface FastEthernet0/0
+ description LINK_SW1_GESTION
+ ip address 10.8.46.1 255.255.255.248
+ no shutdown
+exit
+line con 0
+ login authentication default
+ authorization exec default
+ exec-timeout 5 0
+ logging synchronous
+exit
+line aux 0
+ login authentication default
+ authorization exec default
+exit
+line vty 0 4
+ transport input ssh
+ login local
+exit
+logging buffered 16384
+end
+write memory
