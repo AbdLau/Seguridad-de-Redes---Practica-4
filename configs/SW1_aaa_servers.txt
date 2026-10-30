@@ -1,0 +1,33 @@
+SW1#show aaa servers
+
+RADIUS: id 1, priority 1, host 10.8.46.2, auth-port 1812, acct-port 1813
+     State: current UP, duration 2487s, previous duration 0s
+     Dead: total time 0s, count 0
+     Quarantined: No
+     Authen: request 8, timeouts 0, failover 0, retransmission 0
+             Response: accept 7, reject 1, challenge 0
+             Response: unexpected 0, server error 0, incorrect 0, time 9ms
+             Transaction: success 8, failure 0
+             Throttled: transaction 0, timeout 0, failure 0
+     Author: request 0, timeouts 0, failover 0, retransmission 0
+             Response: accept 0, reject 0, challenge 0
+             Response: unexpected 0, server error 0, incorrect 0, time 0ms
+             Transaction: success 0, failure 0
+             Throttled: transaction 0, timeout 0, failure 0
+     Account: request 13, timeouts 0, failover 0, retransmission 0
+             Request: start 7, interim 0, stop 6
+             Response: start 7, interim 0, stop 6
+             Response: unexpected 1, server error 0, incorrect 0, time 4ms
+             Transaction: success 13, failure 0
+             Throttled: transaction 0, timeout 0, failure 0
+     Elapsed time since counters last cleared: 41m
+     Estimated Outstanding Access Transactions: 0
+     Estimated Outstanding Accounting Transactions: 0
+     Estimated Throttled Access Transactions: 0
+     Estimated Throttled Accounting Transactions: 0
+     Maximum Throttled Transactions: access 0, accounting 0
+     Requests per minute past 24 hours:
+             high - 0 hours, 24 minutes ago: 6
+             low  - 0 hours, 0 minutes ago: 0
+             average: 0
+SW1#
