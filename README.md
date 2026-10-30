@@ -2,9 +2,7 @@
 
 ## Video demostrativo
 
-[Ver video en YouTube](ENLACE_DEL_VIDEO)
-
-Grabado con hora y fecha visibles, cara y voz del autor.
+[Ver video en YouTube](https://www.youtube.com/watch?v=-5vBQiMlHXE)
 
 ## Propósito del laboratorio
 
